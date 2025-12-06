@@ -2,12 +2,14 @@ import './App.jsx'
 import './style/App.css'
 import AddForm from "./AddForm.jsx"
 
-function GameCards() {
-    return (
-        <AddForm />
+export function GameCards() {
 
+    return (
+        <>
+        <h1 className={"AddGame"}>Ajouter un jeu </h1>
+        <AddForm />
+        </>
 
     )
 }
 
-export default GameCards;
