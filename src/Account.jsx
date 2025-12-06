@@ -1,12 +1,13 @@
 import './App.jsx'
-// import { useNavigate } from "react-router-dom";
+import Header from "./Header.jsx";
 
 export function Account() {
-    // const navigate = useNavigate();
+
 
     return (
         <div>
             <h1> Account </h1>
+
         </div>
     )
 }

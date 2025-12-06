@@ -5,3 +5,7 @@ p{
 body{
   background-color: #272727;
 }
+
+li:hover{
+  cursor: pointer;
+}
