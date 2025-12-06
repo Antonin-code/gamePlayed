@@ -7,9 +7,9 @@ function App() {
 
   return (
     <>
-        <body className="background">
-        <Header/>
-        </body>
+        <div className="background">
+        <Header />
+        </div>
     </>
 
 

@@ -7,7 +7,7 @@ function Header(){
 
     return (
         <div className="navbar">
-            <href onClick={() => navigate("/Account")}>Mon compte</href>
+            <li onClick={() => navigate("/Account")}>Mon compte</li>
         </div>
     )
 }
