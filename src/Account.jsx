@@ -1,5 +1,4 @@
 import './App.jsx'
-import Header from "./Header.jsx";
 import './style/App.css'
 
 export function Account() {
