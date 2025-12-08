@@ -9,7 +9,7 @@ export function Footer() {
         <div className="footainer">
             <p> 2025 - 2026</p>
             <p> Coding-Factory</p>
-            <img src={Gamecards} alt="GamecardsLogo" />
+            <img className={"LogoFooter"} src={Gamecards} alt="GamecardsLogo" />
         </div>
         </div>
     )

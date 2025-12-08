@@ -13,3 +13,68 @@ li:hover{
 .title{
     margin-top: 5%;
 }
+
+.Fromulaire {
+    margin-top: 5%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+input{
+    width: 10%;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    backdrop-filter: blur(10px);
+}
+
+input::placeholder {
+    color: #ddd;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+input {
+    border-color: #4AA4FA;
+    box-shadow: 0 0 10px rgba(74, 164, 250, 0.5);
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+input:hover {
+    border-color: #66b7ff;
+}
+
+button{
+    padding: 12px 30px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #fff;
+    background-color: rgba(74, 164, 250, 0.8);
+    border: 2px solid #4AA4FA;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 15px rgba(74, 164, 250, 0.4);
+    justify-content: center;
+    display: flex;
+}
+
+button {
+    background-color: rgba(74, 164, 250, 1);
+    box-shadow: 0 6px 20px rgba(74, 164, 250, 0.6);
+    transform: translateY(-2px);
+}
+
+button {
+    background-color: rgba(74, 164, 250, 0.9);
+    box-shadow: 0 3px 10px rgba(74, 164, 250, 0.5);
+    transform: translateY(1px);
+}
