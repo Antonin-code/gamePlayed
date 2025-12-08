@@ -1,4 +1,4 @@
-.container {
+.footainer {
     flex-direction: row;
     color: white;
     display: flex;
@@ -10,12 +10,11 @@
     text-align: center;
     width: 100%;
 
-
 }
 
-.navbar {
+.navbarfoot {
     position: fixed;
-    top: 0;
+    bottom: 0;
     left: 0;
     width: 100%;
     height: 80px;
@@ -31,10 +30,7 @@
     z-index: 999;
 }
 
-.headerTitle{
-    padding-right: 2%;
-}
-
-.LogoutButton{
-    width: 5%;
+.navbarfoot p{
+    color: white;
+    font-size: 15px;
 }

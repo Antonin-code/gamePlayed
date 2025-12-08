@@ -1,0 +1,15 @@
+p{
+    color: yellow;
+}
+
+body{
+    background-color: #272727;
+}
+
+li:hover{
+    cursor: pointer;
+}
+
+.title{
+    margin-top: 5%;
+}

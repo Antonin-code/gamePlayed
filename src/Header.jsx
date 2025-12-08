@@ -1,7 +1,6 @@
 import './style/header.css'
 import './App.jsx'
 import {Route, Routes, useNavigate} from "react-router-dom";
-import {Account} from "./Account.jsx";
 
 function Header(){
     const navigate = useNavigate();
@@ -9,12 +8,15 @@ function Header(){
     return (
         <div className="navbar">
             <div className="container">
-            <h1>GameCards </h1>
-            <li onClick={() => navigate("/Account")}>Mon compte</li>
+            <h1 className={"headerTitle"}>GameCards </h1>
+            <li onClick={() => navigate("/Home")}>Home</li>
             <li onClick={() => navigate("/GameCards")}>Jeux</li>
             <li onClick={() => navigate("/SeriesCards")}>Séries</li>
             <li onClick={() => navigate("/MovieCards")}>Films</li>
+            <li onClick={() => navigate("/Stats")}>Statistiques</li>
+            <li onClick={() => navigate("/Account")}>Mon compte</li>
             <input type={"searchbar"}></input>
+            <button className={"LogoutButton"}> Deconnexion </button>
             </div>
 
         </div>
