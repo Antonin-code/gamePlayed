@@ -1,4 +1,4 @@
-import './style/header.css'
+import './style/Header.css'
 import './App.jsx'
 import {Route, Routes, useNavigate} from "react-router-dom";
 import Gamecards from "./image/GameCards.png";

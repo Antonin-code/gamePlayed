@@ -47,3 +47,17 @@ h1{
     display: flex;
     gap: 10px;
 }
+
+.cards {
+    width: 250px;
+    background-color: grey;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.cards:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}

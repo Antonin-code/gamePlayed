@@ -1,5 +1,5 @@
 p{
-  color: white;
+  color: #F2F2F2;
 }
 
 body{
@@ -12,4 +12,9 @@ li:hover{
 
 .title{
   margin-top: 5%;
+    color: #E5E5E5;
+}
+
+body {
+    font-family: "Inter", sans-serif;
 }

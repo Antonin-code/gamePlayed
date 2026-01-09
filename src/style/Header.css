@@ -10,7 +10,6 @@
     text-align: center;
     margin-right: 60px;
 
-
 }
 
 .navbar {
@@ -34,6 +33,7 @@
 .headerTitle{
     font-size: 50px;
     font-weight: bold;
+    color: #E5E5E5;
 }
 
 .LogoutButton{
@@ -52,4 +52,8 @@
 
 .search{
     width: 8%;
+}
+
+li{
+    color: #E5E5E5;
 }

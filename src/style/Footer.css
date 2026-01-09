@@ -2,7 +2,7 @@
     flex-direction: row;
     color: white;
     display: flex;
-    gap: 100px;
+    gap: 750px;
     font-size: 30px;
     list-style-type: none;
     align-items: center;
@@ -31,7 +31,7 @@
 }
 
 .navbarfoot p{
-    color: white;
+    color: #BBBBBB;
     font-size: 15px;
     gap: 100px;
 }
