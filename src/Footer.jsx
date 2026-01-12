@@ -7,7 +7,7 @@ export function Footer() {
 
         <div className="navbarfoot">
         <div className="footainer">
-            <p> 2025 - 2026</p> 
+            <p> 2025 - 2026</p>
             <p> Coding-Factory</p>
             <img className={"LogoFooter"} src={Gamecards} alt="GamecardsLogo" />
         </div>

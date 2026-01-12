@@ -14,10 +14,14 @@ export function MovieCards() {
             .catch(error => console.error(error));
     }, []);
 
+
+
     return (
         <>
             <h1 className={"AddGame"}>Ajouter un Film </h1>
             <AddForm/>
+
+            <button type="submit" onClick={}>Ajouter</button>
 
             <h1>Liste des films</h1>
             {movies.map(movie => (

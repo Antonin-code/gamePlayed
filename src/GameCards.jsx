@@ -5,20 +5,27 @@ import Cards from "./Cards.jsx"
 import {useState,useEffect} from "react";
 
 export function GameCards() {
-    const [game, setGame] = useState([]);
+    const [games, setGame] = useState([]);
 
     useEffect(() => {
-        fetch ("http://localhost:8000/api/movies")
-            .then(response => response.json())
+        fetch ("http://localhost:8000/api/games")
+        .then(response => response.json())
         .then(data => setGame(data))
-
     })
 
     return (
         <>
         <h1 className={"AddGame"}>Ajouter un jeu </h1>
         <AddForm />
-        <Cards />
+            <h1>Liste des jeux</h1>
+            {games.map((game) => (
+                <div key={game.id} className={"cards"}>
+                    <p>{game.name}</p>
+                    <p>{game.description}</p>
+                    <p>{game.playTime}</p>
+                    <p>{game.players}</p>
+                </div>
+            ))}
         </>
 
     )
