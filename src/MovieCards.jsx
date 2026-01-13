@@ -1,8 +1,8 @@
 import "./Header.jsx"
 import "./App.jsx"
 import "./style/Cards.css"
-import AddForm from "./AddForm.jsx";
 import {useEffect, useState} from "react";
+import MovieAddForm from "./movieAddForm.jsx";
 
 export function MovieCards() {
     const [movies, setMovies] = useState([]);
@@ -19,20 +19,20 @@ export function MovieCards() {
     return (
         <>
             <h1 className={"AddGame"}>Ajouter un Film </h1>
-            <AddForm/>
-
-            <button type="submit" onClick={}>Ajouter</button>
+            <MovieAddForm/>
 
             <h1>Liste des films</h1>
+            <div className={"cardAlignement"}>
             {movies.map(movie => (
                 <div className={"cards"} key={movie.id}>
                     <h2>{movie.name}</h2>
-                    <p>{movie.description}</p>
-                    <p>{movie.rating}</p>
-                    <p>{movie.release_date}</p>
+                    <p>Description : {movie.description}</p>
+                    <p>Note : {movie.rating}</p>
+                    <p>Date de Sortie : {movie.release_date}</p>
                 </div>
 
             ))}
+            </div>
         </>
 
     );
