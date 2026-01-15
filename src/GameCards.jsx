@@ -4,6 +4,7 @@ import GameAddForm from "./gameAddForm.jsx"
 import Cards from "./Cards.jsx"
 import {useState, useEffect} from "react";
 
+
 export function GameCards() {
     const [games, setGame] = useState([]);
 
@@ -12,6 +13,8 @@ export function GameCards() {
             .then(response => response.json())
             .then(data => setGame(data))
     })
+
+
 
     const deleteGame = async (id) => {
         try {
@@ -38,26 +41,33 @@ export function GameCards() {
         }
     };
 
+
+    document.querySelectorAll('.cards').forEach(cards => {
+
+        cards.addEventListener('click', () => {
+            document.querySelectorAll('.cards.active').forEach(c => c.classList.remove('active'));
+            cards.classList.add('active')
+        });
+
+    });
+
 return (
     <>
         <h1 className={"AddGame"}>Ajouter un jeu </h1>
         <GameAddForm/>
 
-        <h1>Liste des jeux</h1>
+        <h2 className={"list"}>Liste des jeux</h2>
         <div className={"cardAlignement"}>
             {games.map((game) => (
 
                 <div key={game.id} className={"cards"}>
-                    <h2>{game.name}</h2>
+                    <h1>{game.name}</h1>
                     <p>Description : {game.description}</p>
                     <p> Temps de jeu : {String(game.playTime).split(':')[0]} Heures </p>
                     <p> Nombre de joueurs : {game.players}</p>
-
-                    <button onClick={() => deleteGame(game.id)}>
-                        Supprimer
-                    </button>
-
+                    <button className={"suppButton"} onClick={() => deleteGame(game.id)}>Supprimer</button>
                 </div>
+
             ))}
         </div>
     </>

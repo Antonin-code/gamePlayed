@@ -7,7 +7,6 @@ import {SeriesCards} from "./SeriesCards.jsx";
 import {MovieCards} from "./MovieCards.jsx";
 import {Stats} from "./Stats.jsx";
 import {Home} from "./Home.jsx";
-import {Footer} from "./Footer.jsx";
 import {Login} from "./Login.jsx";
 import {Signin} from "./Signin.jsx";
 
@@ -26,7 +25,6 @@ function App() {
                 <Route path="/Signin/" element={<Signin />}/>
                 <Route path="/Login/" element={<Login />}/>
             </Routes>
-            <Footer />
 
         </>
 

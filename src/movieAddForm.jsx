@@ -52,12 +52,13 @@ function MovieAddForm(){
     return(
         <>
             <form className="formAjout" onSubmit={handleSubmit}>
+                <div className="input">
                 <input type="text" name="title" placeholder="Titre" value={data.title} onChange={handleChange} />
                 <input type="text" name="description" placeholder="Description" value={data.description} onChange={handleChange} />
                 <input type="text" name="release_date" placeholder="Date de sortie" value={data.release_date} onChange={handleChange} />
                 <input type="number" name="rating" placeholder="Note / 10" value={data.rating} onChange={handleChange} />
-
-                <button type="submit">Ajouter</button>
+                </div>
+                <button className={"addButton"} type="submit">Ajouter</button>
             </form>
         </>
 

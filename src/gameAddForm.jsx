@@ -55,6 +55,7 @@ function GameAddForm() {
 
     return (
         <form className="formAjout" onSubmit={handleSubmit}>
+            <div className="input">
 
             <input type="text" name="name" placeholder="Nom" value={data.name} onChange={handleChange}/>
 
@@ -63,8 +64,8 @@ function GameAddForm() {
             <input type="number" name="playTime" placeholder="Temps de jeu" value={data.playTime} onChange={handleChange}/>
 
             <input type="number" name="players" placeholder="Joueurs" value={data.players} onChange={handleChange}/>
-
-            <button type="submit">Ajouter</button>
+            </div>
+            <button className={"addButton"} type="submit">Ajouter</button>
         </form>
     );
 }
